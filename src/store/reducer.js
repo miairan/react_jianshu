@@ -6,12 +6,15 @@ const stateDefault = {
 
 const reducer = (state=stateDefault, action) => {
     if (action.type === INPUT_FOCUS) {
-        state.focused = true;
-        return state;
+        return {
+            focused: true
+        }
     }
     if (action.type === INPUT_BLUR) {
-        state.focused = false;
-        return state;
+        return {
+            focused: false
+        }
+
     }
     return state;
 };

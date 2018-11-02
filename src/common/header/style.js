@@ -75,12 +75,12 @@ export const NavSearch = styled.input.attrs({
     font-size: 14px;
     color: #777;
     background: #eee;
+    outline: none;
     &::placeholder {
         color: #999;
     }
     &.focused {
         width: 240px;
-
     }
     &.slide-enter {
         transition: all 0.2s ease-out;
@@ -105,33 +105,23 @@ export const Addition = styled.div`
 
 export const Button = styled.div`
     float: right;
-    margin-top: 9px;
-    margin-right: 20px;
+    box-sizing: border-box;
+    height: 40px;
+    line-height: 26px;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    padding: 6px 18px;
+    margin: 8px 15px 0 0;
+    border-radius: 20px;
+    font-size: 15px;
+    cursor: pointer;
     &.reg {
         color: #ec6149;
+        border: 1px solid #ec6149;
     }
     &.writing {
         color: #fff;
         background: #ec6149;
     }
 `;
-
-export const WriteBtn = styled.div`
-    float: right;
-    box-sizing: border-box;
-    width: 100px;
-    height: 40px;
-    line-height: 26px;
-    font-weight: 400;
-    text-align: center;
-    vertical-align: middle;
-    padding: 6px 12px;
-    margin: 8px 15px 0;
-    border-radius: 20px;
-    font-size: 15px;
-    color: #fff;
-    background-color: #ea6f5a;
-    cursor: pointer;
-`;
-
-
